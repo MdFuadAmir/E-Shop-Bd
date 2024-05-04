@@ -1,3 +1,5 @@
+import Category from "../Category/Category";
+import Category2 from "../Category/Category2";
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 
@@ -5,8 +7,11 @@ import Hero from "../Hero/Hero";
 const Home = () => {
     return (
         <div>
-            <Header></Header>
-            <Hero></Hero>
+            <Header />
+            <Hero />
+            <Category />
+            <Category2 />
+            
         </div>
     );
 };
