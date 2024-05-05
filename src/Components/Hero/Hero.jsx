@@ -16,16 +16,16 @@ const heroDatd =[
     id: 2,
     img: image2,
     subtitle: "Beats Solo",
-    title: "3D Glass",
-    title2: "Display",
+    title: "Wireless",
+    title2: "Vurtuai",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolore suscipit debitis totam fuga est? Quibusdam tempore architecto vero eum."
   },
   {
     id: 3,
     img: image3,
     subtitle: "Beats Solo",
-    title: "Macbook",
-    title2: "Pro",
+    title: "Branded",
+    title2: "Laptops",
     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolore suscipit debitis totam fuga est? Quibusdam tempore architecto vero eum."
   }
 ]
