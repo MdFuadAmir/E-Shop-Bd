@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 import Services from "../Services/Services";
 import headphone from "../../assets/hero/headphone.png"
+import Products from "../Products/Products";
 
 const bannerData ={
     discount: "30% OFF",
@@ -26,6 +27,7 @@ const Home = () => {
             <Category2 />
             <Services/>
             <Banner data={bannerData}/>
+            <Products />
         </div>
     );
 };

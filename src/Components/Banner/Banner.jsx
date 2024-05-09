@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const Banner = ({data}) => {
     const {discount,bgColor,date,image,title,title2,title3,title4} = data;
@@ -34,3 +34,7 @@ const Banner = ({data}) => {
 };
 
 export default Banner;
+
+Banner.propTypes ={
+    data: PropTypes.object.isRequired
+}
