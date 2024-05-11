@@ -8,6 +8,7 @@ import image5 from "../../assets/product/p-5.jpg"
 import image6 from "../../assets/product/p-9.jpg"
 import image7 from "../../assets/product/p-7.jpg"
 
+
 const productData =[
     {
         id: 1,
@@ -58,9 +59,6 @@ const productData =[
         price: "220",
         aosDelay: "600"
     },
-    
-    
-
 ]
 
 
@@ -75,6 +73,7 @@ const Products = () => {
                 {/* body section */}
                 <div>
                     <ProductCard data={productData}/>
+                    
                 </div>
             </div>
             
