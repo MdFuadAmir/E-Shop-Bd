@@ -8,6 +8,7 @@ import headphone from "../../assets/hero/headphone.png"
 import Products from "../Products/Products";
 import Banner2 from "../Banner/Banner2";
 import smartWash from "../../assets/category/smartwatch2-removebg-preview.png"
+import Blogs from "../Blogs/Blogs";
 
 const bannerData ={
     discount: "30% OFF",
@@ -41,6 +42,7 @@ const Home = () => {
             <Banner data={bannerData}/>
             <Products />
             <Banner2 data={bannerData2}/>
+            <Blogs />
         </div>
     );
 };
