@@ -9,6 +9,8 @@ import Products from "../Products/Products";
 import Banner2 from "../Banner/Banner2";
 import smartWash from "../../assets/category/smartwatch2-removebg-preview.png"
 import Blogs from "../Blogs/Blogs";
+import Patnrers from "../Partners/Patnrers";
+import Footer from "../Footer/Footer";
 
 const bannerData ={
     discount: "30% OFF",
@@ -43,6 +45,8 @@ const Home = () => {
             <Products />
             <Banner2 data={bannerData2}/>
             <Blogs />
+            <Patnrers />
+            <Footer />
         </div>
     );
 };
