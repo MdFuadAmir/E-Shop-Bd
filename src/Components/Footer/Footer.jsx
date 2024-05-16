@@ -13,7 +13,7 @@ const Footer = () => {
     <h6 className="text-lg font-bold dark:text-white">Important Links</h6>
     <a href="/" className="link link-hover dark:invert">Home</a>
     <a href="/about" className="link link-hover dark:invert">About</a>
-    <a href="/container" className="link link-hover dark:invert">Contact</a>
+    <a href="/contact" className="link link-hover dark:invert">Contact</a>
     <a href="/blog" className="link link-hover dark:invert">Blog</a>
   </nav> 
   <nav>

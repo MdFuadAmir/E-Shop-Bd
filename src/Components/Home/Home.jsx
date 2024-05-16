@@ -11,7 +11,9 @@ import smartWash from "../../assets/category/smartwatch2-removebg-preview.png"
 import Blogs from "../Blogs/Blogs";
 import Patnrers from "../Partners/Patnrers";
 import Footer from "../Footer/Footer";
-
+import Popup from "../Popup/Popup";
+import React from 'react';
+import Aos from "aos";
 const bannerData ={
     discount: "30% OFF",
     title: "Fine Smile",
@@ -34,10 +36,28 @@ const bannerData2 ={
 }
 
 const Home = () => {
+    const [orderPopup, setOrderPopup] = React.useState(false);
+
+    const handleOrderPopup = () =>{
+        setOrderPopup(!orderPopup);
+    }
+
+    React.useEffect(() =>{
+        Aos.init(
+            {
+                duration: 800,
+                easing: "ease-in-sine",
+                delay: 100,
+                offset: 100,
+            }
+        );
+        Aos.refresh();
+    },[])
+
     return (
         <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
-            <Header />
-            <Hero />
+            <Header handleOrderPopup={handleOrderPopup}/>
+            <Hero handleOrderPopup={handleOrderPopup}/>
             <Category />
             <Category2 />
             <Services/>
@@ -47,6 +67,7 @@ const Home = () => {
             <Blogs />
             <Patnrers />
             <Footer />
+            <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup}/>
         </div>
     );
 };
